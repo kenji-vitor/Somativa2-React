@@ -1,13 +1,141 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div[style*="padding: 20px"] {
+  background: #ffffff;
+  padding: 40px !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 420px;
+}
+
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+}
+
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+button[type="submit"],
+button:not([type]) {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+button:not([type]):hover {
+  background-color: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+button.btn-sair, 
+div > button:last-of-type {
+  background-color: #dc2626 !important;
+}
+
+button.btn-sair:hover, 
+div > button:last-of-type:hover {
+  background-color: #b91c1c !important;
+}
+
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+li:last-child {
+  border-bottom: none;
 }
